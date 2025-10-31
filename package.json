@@ -1,0 +1,24 @@
+{
+  "name": "react-vs-preact-comparison",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install-all": "npm install",
+    "dev:react": "npm run dev --workspace=packages/react-app",
+    "dev:preact": "npm run dev --workspace=packages/preact-app",
+    "dev:dashboard": "npm run dev --workspace=packages/dashboard",
+    "build:all": "npm run build --workspaces",
+    "dev": "concurrently \"npm run dev:react\" \"npm run dev:preact\" \"npm run dev:dashboard\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

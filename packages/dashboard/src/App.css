@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.framework-switch {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.framework-switch button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.react-btn {
+  background: #282c34;
+  color: #61dafb;
+}
+
+.react-btn.active {
+  background: #61dafb;
+  color: #282c34;
+  border-color: #61dafb;
+  transform: scale(1.05);
+}
+
+.preact-btn {
+  background: #282c34;
+  color: #673ab8;
+}
+
+.preact-btn.active {
+  background: #673ab8;
+  color: white;
+  border-color: #673ab8;
+  transform: scale(1.05);
+}
+
+.metrics-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.metric-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.metric-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.metric-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.metric-values .value {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.metric-values .label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.metric-values .number {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.metric-values .value.winner .number {
+  color: #4caf50;
+}
+
+.metric-values .divider {
+  color: #444;
+  font-weight: bold;
+}
+
+.difference {
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.difference.positive {
+  background: #4caf5020;
+  color: #4caf50;
+}
+
+.difference.negative {
+  background: #f4433620;
+  color: #f44336;
+}
+
+.live-charts {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.chart-container h3 {
+  margin-bottom: 20px;
+  color: #888;
+}
+
+.iframe-container {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.iframe-header {
+  padding: 20px;
+  background: #252525;
+  border-bottom: 1px solid #333;
+}
+
+.iframe-header h3 {
+  font-size: 1.3rem;
+}
+
+.app-iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+  background: white;
+}
