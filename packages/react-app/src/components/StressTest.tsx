@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Todo, generateTodos } from "@comparison/shared";
+import { Todo } from "../types";
+import { generateTodos } from "../utils";
 
 interface StressTestProps {
   onTodosUpdate: (todos: Todo[]) => void;

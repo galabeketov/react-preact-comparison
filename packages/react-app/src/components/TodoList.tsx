@@ -1,4 +1,4 @@
-import { Todo } from "@comparison/shared";
+import { Todo } from "../types";
 
 interface TodoListProps {
   todos: Todo[];

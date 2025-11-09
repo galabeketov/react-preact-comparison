@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
+import { Todo, PerformanceMetrics } from "./types";
 import {
-  Todo,
-  PerformanceMetrics,
   generateTodos,
   measurePerformance,
   sendMetricsToParent,
-} from "@comparison/shared";
+} from "./utils";
+
 import TodoList from "./components/TodoList";
 import StressTest from "./components/StressTest";
 import "./App.css";
