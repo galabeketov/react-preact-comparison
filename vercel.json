@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "buildCommand": "npm install && npm install --workspace=packages/shared && npm install --workspace=packages/dashboard && npm run build --workspace=packages/dashboard",
-  "outputDirectory": "packages/dashboard/dist",
-  "installCommand": "npm install",
-  "framework": null
-}
