@@ -16,10 +16,17 @@ function App() {
   const [currentPreactMetrics, setCurrentPreactMetrics] =
     useState<PerformanceMetrics | null>(null);
 
+  // Environment variables with fallback for local development
+  const REACT_APP_URL =
+    import.meta.env.VITE_REACT_APP_URL || "http://localhost:3001";
+  const PREACT_APP_URL =
+    import.meta.env.VITE_PREACT_APP_URL || "http://localhost:3002";
+
   // Listen to messages from iframes
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       console.log("📥 Dashboard received message:", event.data);
+      console.log("📍 Message origin:", event.origin);
 
       if (event.data.type === "PERFORMANCE_METRICS") {
         const metrics: PerformanceMetrics = event.data.data;
@@ -41,18 +48,19 @@ function App() {
     };
 
     console.log("👂 Dashboard: Listening for messages...");
+    console.log("🔗 React URL:", REACT_APP_URL);
+    console.log("🔗 Preact URL:", PREACT_APP_URL);
+
     window.addEventListener("message", handleMessage);
 
     return () => {
       console.log("🛑 Dashboard: Stopped listening");
       window.removeEventListener("message", handleMessage);
     };
-  }, []);
+  }, [REACT_APP_URL, PREACT_APP_URL]);
 
   const iframeUrl =
-    activeFramework === "react"
-      ? "http://localhost:3001"
-      : "http://localhost:3002";
+    activeFramework === "react" ? REACT_APP_URL : PREACT_APP_URL;
 
   return (
     <div className="dashboard">
