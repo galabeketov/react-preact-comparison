@@ -23,9 +23,9 @@ This project was created to:
 
 ## 🚀 Live Demo
 
-- 🌐 **Dashboard**: [https://react-preact-comparison.vercel.app](https://react-preact-comparison.vercel.app)
-- ⚛️ **React App**: [https://your-react-app.vercel.app](https://your-react-app.vercel.app)
-- ⚡ **Preact App**: [https://your-preact-app.vercel.app](https://your-preact-app.vercel.app)
+- 🌐 **Dashboard**: [https://coding.bektov.uz](https://coding.beketov.uz)
+- ⚛️ **React App**: [https://react-preact-comparison-react-app-f.vercel.app/](https://react-preact-comparison-react-app-f.vercel.app/)
+- ⚡ **Preact App**: [https://react-preact-comparison-preact-app-three.vercel.app/](https://react-preact-comparison-preact-app-three.vercel.app/)
 
 ---
 
@@ -361,7 +361,7 @@ I built a micro-frontend dashboard to compare React and Preact side-by-side usin
 💡 Key Takeaway:
 Size matters! For mobile-first or bandwidth-constrained apps, Preact's 3KB bundle is a game-changer. But React's ecosystem and tooling still make it the go-to for complex applications.
 
-🔗 Live Demo: [your-dashboard-url]
+🔗 Live Demo: [https://coding.beketov.uz]
 💻 GitHub: https://github.com/galabeketov/react-preact-comparison
 
 #React #Preact #WebDev #Frontend #Performance #JavaScript #TypeScript #MicroFrontend
