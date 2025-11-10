@@ -144,7 +144,7 @@ export default function InfoSection() {
         </div>
       </div>
 
-      <div className="micro-frontend-info">
+      {/* <div className="micro-frontend-info">
         <h3>🏗️ Why Micro-Frontend Architecture?</h3>
         <div className="architecture-explanation">
           <p>
@@ -198,7 +198,7 @@ export default function InfoSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="methodology">
         <h3>🧪 Testing Methodology</h3>
