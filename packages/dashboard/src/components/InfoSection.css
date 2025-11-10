@@ -1,0 +1,261 @@
+.info-section {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.info-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.info-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 30px;
+  border: 2px solid #333;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.react-card:hover {
+  border-color: #61dafb;
+}
+
+.preact-card:hover {
+  border-color: #673ab8;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+.card-header .icon {
+  font-size: 3rem;
+}
+
+.card-header h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.card-content h4 {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card-content ul li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.card-content ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #666;
+}
+
+.card-content ul li strong {
+  color: #fff;
+}
+
+.card-content p {
+  line-height: 1.8;
+  color: #aaa;
+}
+
+.key-differences {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 50px;
+  border: 2px solid #333;
+}
+
+.key-differences h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.differences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.difference-item {
+  background: #252525;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.difference-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.difference-item p {
+  margin: 8px 0;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.difference-item .highlight {
+  margin-top: 15px;
+  padding: 10px;
+  background: #667eea20;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.micro-frontend-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.micro-frontend-info h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.architecture-explanation > p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.architecture-points {
+  display: grid;
+  gap: 20px;
+}
+
+.point {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.point-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.point strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.point p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.methodology {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  border: 2px solid #333;
+}
+
+.methodology h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.methodology p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.methodology ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.methodology ul li {
+  padding: 12px 20px;
+  margin: 10px 0;
+  background: #252525;
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.methodology-note {
+  background: #252525;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #ff9800;
+  margin-top: 20px;
+}
+
+.methodology-note strong {
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .differences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-section h2 {
+    font-size: 2rem;
+  }
+}

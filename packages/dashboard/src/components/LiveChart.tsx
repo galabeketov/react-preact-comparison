@@ -27,8 +27,6 @@ export default function LiveChart({ reactData, preactData }: LiveChartProps) {
     preactFPS: preactData[i]?.fps || 0,
   }));
 
-  console.log("chartData", preactData);
-
   return (
     <div className="live-charts">
       <div className="chart-container">

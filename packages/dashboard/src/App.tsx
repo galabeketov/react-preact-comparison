@@ -4,6 +4,7 @@ import MetricsComparison from "./components/MetricsComparison";
 import LiveChart from "./components/LiveChart";
 import FrameworkSwitch from "./components/FrameworkSwitch";
 import "./App.css";
+import InfoSection from "./components/InfoSection";
 
 function App() {
   const [activeFramework, setActiveFramework] = useState<"react" | "preact">(
@@ -71,6 +72,8 @@ function App() {
           usage
         </p>
       </header>
+
+      <InfoSection />
 
       <FrameworkSwitch active={activeFramework} onChange={setActiveFramework} />
 
