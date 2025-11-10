@@ -10,6 +10,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+// happy coding
+
 interface LiveChartProps {
   reactData: PerformanceMetrics[];
   preactData: PerformanceMetrics[];
