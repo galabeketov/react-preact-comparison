@@ -1,4 +1,4 @@
-import { PerformanceMetrics } from "@comparison/shared";
+import { PerformanceMetrics } from "../types";
 
 interface MetricsComparisonProps {
   reactMetrics: PerformanceMetrics | null;

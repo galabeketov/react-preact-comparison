@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { PerformanceMetrics } from "@comparison/shared";
+import { PerformanceMetrics } from "./types";
 import MetricsComparison from "./components/MetricsComparison";
 import LiveChart from "./components/LiveChart";
 import FrameworkSwitch from "./components/FrameworkSwitch";
